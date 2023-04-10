@@ -2,82 +2,546 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/vanilla-template/assets/index-56da46b7.js"></script>
+    <link rel="stylesheet" href="/vanilla-template/assets/index-60e265b4.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+    <header class="header-padding">
+  <div class="header-page container">
+    <a href="" class="header-icon-link"
+      ><svg class="header-logo-icon">
+        <use href="/vanilla-template/assets/icon-96e649bb.svg#logo"></use></svg
+    ></a>
+    <button type="button" class="hamburger-menu js-open-menu">
+      <svg class="hamburger-svg">
+        <use href="../images/icon.svg#gg_menu"></use>
+      </svg>
+    </button>
+    <div class="header-container js-menu-container">
+      <button type="button" class="hamburger-menu-close js-close-menu">
+        <svg class="hamburger-svg-close">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#cross"></use>
+        </svg>
+      </button>
+      <nav class="nav-menu">
+        <ul class="header-list list">
+          <li class="header-item">
+            <a href="" class="header-link link header-link-active">Home</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link link">About</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link link">Service</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link link">Menu</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header-button">Order Now</button>
+    </div>
+  </div>
 </header>
 
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
+    <main>
+      <!-- Favorite food -->
+      <section class="favorite-food">
+  <div class="page-favorite container">
+    <div class="favorite-container">
+      <h1 class="favorite-title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="favorite-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+      <button type="button" class="favorite-button" data-modal-open>
+        Order Now
+      </button>
     </div>
+    <div class="favorite-circle">
+      <picture>
+        <source
+          srcset="/vanilla-template/assets/hero-desk-ce17185c.jpg 1x, /vanilla-template/assets/hero-desk-@2x-50b91d92.jpg 2x"
+          media="(min-width: 1280px)" />
+        <source
+          srcset="/vanilla-template/assets/hero-tablet-ca83dc8d.jpg 1x, /vanilla-template/assets/hero-tablet-@2x-b9888dad.jpg 2x"
+          media="(min-width: 768px)" />
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+        <img
+          src="/vanilla-template/assets/hero-desk-ce17185c.jpg"
+          alt="plate with food"
+          class="favorite-img"
+      /></picture>
     </div>
   </div>
 </section>
+
+
+      <!-- Special Offerings -->
+      <section class="special-page section">
+  <div class="special-container container">
+    <div class="apple-tablet-container">
+      <div class="special-circle-one">
+        <div class="special-circle">
+          <picture class="special-image">
+            <source
+              srcset="/vanilla-template/assets/apple-mobile-4469fba3.png 1x, /vanilla-template/assets/apple-mobile-@2x-885767ba.png 2x"
+              media="(max-width: 767.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/apple-tablet-6439312e.png 1x, /vanilla-template/assets/apple-tablet-@2x-53902dc0.png 2x"
+              media="(max-width: 1279.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/apple-b6013c83.png 1x, /vanilla-template/assets/apple-@2x-7c650f67.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <img src="/vanilla-template/assets/apple-b6013c83.png" alt="apple" />
+          </picture>
+        </div>
+      </div>
+
+      <div class="tablet-thumb">
+        <picture class="apple-tablet-one">
+          <source
+            srcset="/vanilla-template/assets/apple-tablet-60-6896ece6.png 1x, /vanilla-template/assets/apple-tablet-60-@2x-e99002ba.png 2x"
+            media="(max-width: 1279.97px)"
+          />
+          <img src="/vanilla-template/assets/apple-b6013c83.png" alt="apple" />
+        </picture>
+        <picture class="apple-tablet-two">
+          <source
+            srcset="/vanilla-template/assets/apple-tablet-30-f43cc395.png 1x, /vanilla-template/assets/apple-tablet-30-@2x-02c1abd6.png 2x"
+            media="(max-width: 1279.97px)"
+          />
+          <img src="/vanilla-template/assets/apple-b6013c83.png" alt="apple" />
+        </picture>
+      </div>
+    </div>
+    <div class="special-right">
+      <h2 class="special-title">What&#39;s Special About Our Offerings</h2>
+      <p class="special-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="special-list list">
+        <li class="special-item">
+          <div class="special-icon-container">
+            <svg class="special-icon">
+              <use href="/vanilla-template/assets/icon-96e649bb.svg#rocket"></use>
+            </svg>
+          </div>
+          <h3 class="special-item-title">Fasest Delivery</h3>
+          <p class="special-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="special-item">
+          <div class="special-icon-container">
+            <svg class="special-icon">
+              <use href="/vanilla-template/assets/icon-96e649bb.svg#touch"></use>
+            </svg>
+          </div>
+          <h3 class="special-item-title">Easy To Order</h3>
+          <p class="special-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <button type="button" class="special-button" data-modal-open>
+        Order Now
+      </button>
+
+      <a href="#" class="read-more link">Read more <span>&#62;</span></a>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Some of Our Favorites (plates) -->
+      <section class="section">
+  <div class="plate-container container">
+    <h2 class="plate-title">Some of Our Favorites</h2>
+    <p class="plate-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <ul class="plate-list list">
+      <li class="plate-item">
+        <a href="" class="plate-link link">
+          <picture>
+            <source
+              srcset="/vanilla-template/assets/mobile-gamburger-2fc0977d.jpg 1x, /vanilla-template/assets/mobile-gamburger-@2x-e1b29522.jpg 2x"
+              media="(max-width: 767.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/tablet-gamburger-5fd206ad.jpg 1x, /vanilla-template/assets/tablet-gamburger-@2x-3655ac7a.jpg 2x"
+              media="(max-width: 1279.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/desk-gamburger-c453cda5.jpg 1x, /vanilla-template/assets/desk-gamburger-@2x-98aa7301.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="/vanilla-template/assets/desk-gamburger-c453cda5.jpg"
+              alt="Hamburger"
+              class="plate-item-img"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="plate-item">
+        <a href="" class="plate-link link">
+          <picture>
+            <source
+              srcset="/vanilla-template/assets/mobile-pasta-af96bc01.jpg 1x, /vanilla-template/assets/mobile-pasta-@2x-7d909b76.jpg 2x"
+              media="(max-width: 767.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/tablet-pasta-5c4b78cb.jpg 1x, /vanilla-template/assets/tablet-pasta-@2x-3fd72187.jpg 2x"
+              media="(max-width: 1279.97px)"
+            />
+            <source
+              srcset="
+                ./images/desk-pasta.jpg     1x,
+                ./images/desk-pasta-@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="./images/desk-pasta.jpg"
+              alt="Pasta"
+              class="plate-item-img"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="plate-item">
+        <a href="" class="plate-link link">
+          <picture>
+            <source
+              srcset="/vanilla-template/assets/mobile-pizza-ded64a64.jpg 1x, /vanilla-template/assets/mobile-pizza-@2x-9f88237b.jpg 2x"
+              media="(max-width: 767.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/tablet-pizza-94a8fcdb.jpg 1x, /vanilla-template/assets/tablet-pizza-@2x-87f83f26.jpg 2x"
+              media="(max-width: 1279.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/desk-pizza-80081adc.jpg 1x, /vanilla-template/assets/desk-pizza-@2x-ca280a08.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="/vanilla-template/assets/desk-pizza-80081adc.jpg"
+              alt="Pizza"
+              class="plate-item-img"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="plate-item">
+        <a href="" class="plate-link link"
+          ><picture>
+            <source
+              srcset="/vanilla-template/assets/tablet-chicken-5ce8b185.jpg 1x, /vanilla-template/assets/tablet-chicken-@2x-07c6ebeb.jpg 2x"
+              media="(max-width: 1279.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/desk-chicken-e470ff49.jpg 1x, /vanilla-template/assets/desk-chicken-@2x-5885ba52.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="/vanilla-template/assets/desk-chicken-e470ff49.jpg"
+              alt="Chicken"
+              class="plate-item-img"
+            /> </picture
+        ></a>
+      </li>
+      <li class="plate-item">
+        <a href="" class="plate-link link"
+          ><picture>
+            <source
+              srcset="/vanilla-template/assets/tablet-salat-bdcd8760.jpg 1x, /vanilla-template/assets/tablet-salat-@2x-29c170b4.jpg 2x"
+              media="(max-width: 1279.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/desk-salat-0cb020f9.jpg 1x, /vanilla-template/assets/desk-salat-@2x-1ff5daba.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="/vanilla-template/assets/desk-salat-0cb020f9.jpg"
+              alt="Salat"
+              class="plate-item-img"
+            /> </picture
+        ></a>
+      </li>
+      <li class="plate-item">
+        <a href="" class="plate-link link"
+          ><picture>
+            <source
+              srcset="/vanilla-template/assets/tablet-borshch-8709e758.jpg 1x, /vanilla-template/assets/tablet-borshch-@2x-df535dfb.jpg 2x"
+              media="(max-width: 1279.97px)"
+            />
+            <source
+              srcset="/vanilla-template/assets/desk-borshch-fea3954f.jpg 1x, /vanilla-template/assets/desk-borshch-@2x-62af3c9c.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="/vanilla-template/assets/desk-borshch-fea3954f.jpg"
+              alt="Borshch"
+              class="plate-item-img"
+            /> </picture
+        ></a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+      <!-- Customers says -->
+      <section class="customers-page section">
+  <div class="customers-container container">
+    <h2 class="customers-title">What our Customers Say</h2>
+    <p class="customers-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <ul class="customers-list list">
+      <li class="customers-item">
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <p class="customers-icon-text">
+          &#8220;The Best app I have used to order food in a while, so many
+          options to choose from too, I would recommend to a freind, No
+          questions asked&#8221;
+        </p>
+        <div class="customers-avata">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="first avatar"
+            class="customers-avata-img"
+          />
+          <div>
+            <h3 class="customers-avatar-title">Sumith Shah</h3>
+            <p class="customers-avatar-text">Some Dude</p>
+          </div>
+        </div>
+      </li>
+      <li class="customers-item">
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <svg class="customers-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#star"></use>
+        </svg>
+        <p class="customers-icon-text">
+          &#8220;The ease with which I can just go in and order what i want was
+          amazing, It has been a very pleasant experience ordering from this
+          app&#8221;
+        </p>
+        <div class="customers-avata">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="first avatar"
+            class="customers-avata-img"
+          />
+          <div>
+            <h3 class="customers-avatar-title">Sumith Shah</h3>
+            <p class="customers-avatar-text">Some Dude</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+      <!-- Subscribe To Get Special Offers -->
+      <section class="subscribe-page section">
+  <div class="subscribe-container container">
+    <picture class="subscribe-picture">
+      <source
+        srcset="data:image/jpeg;base64,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 1x, /vanilla-template/assets/mobile-banana-@2x-44903cc7.jpg 2x"
+        media="(max-width: 767.97px)"
+      />
+      <source
+        srcset="/vanilla-template/assets/banan-157eb78c.jpg 1x, /vanilla-template/assets/banan-@2x-84497bfb.jpg 2x"
+        media="(min-width: 1280px)"
+      />
+      <img src="/vanilla-template/assets/banan-157eb78c.jpg" alt="banana" class="subscribe-image" />
+    </picture>
+    <div class="subscribe-thumb">
+      <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form class="subscribe-form">
+        <label class="subscribe-lable">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="subscribe-input"
+          />
+        </label>
+        <button type="submit" class="subscribe-button">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-page section">
+  <div class="footer-container container">
+    <div class="footer-thumb-left">
+      <a href="./index.html" class="footer-thumb-link"
+        ><svg class="footer-icon">
+          <use href="/vanilla-template/assets/icon-96e649bb.svg#logo"></use></svg
+      ></a>
+
+      <ul class="footer-list list">
+        <li class="footer-list-item">
+          <a href="" class="footer-list-link link">Home</a>
+        </li>
+        <li class="footer-list-item">
+          <a href="" class="footer-list-link link">About</a>
+        </li>
+        <li class="footer-list-item">
+          <a href="" class="footer-list-link link">Service</a>
+        </li>
+        <li class="footer-list-item">
+          <a href="" class="footer-list-link link">Menu</a>
+        </li>
+        <li class="footer-list-item">
+          <a href="" class="footer-list-link link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-thumb-right">
+      <form class="footer-form">
+        <lable>
+          <span class="footer-form-title">Subscribe</span>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            class="footer-form-input"
+            required
+          />
+        </lable>
+        <button type="submit" class="footer-form-button">Subscribe</button>
+        <p class="footer-form-text">
+          By subscribing you agree to with our <a href="">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom-container container">
+    <ul class="footer-bottom-list list">
+      <li><a href="" class="footer-bottom-link link">Privacy Policy</a></li>
+      <li>
+        <a href="" class="footer-bottom-link link">Terms of Service</a>
+      </li>
+      <li>
+        <a href="" class="footer-bottom-link link">Cookies Settings</a>
+      </li>
+    </ul>
+    <p class="footer-bottom-text">2023 FoodSta. All right reserved.</p>
+  </div>
+</footer>
+
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <h2 class="modal-title">Order Form</h2>
+    <form>
+      <ul class="modal-list list">
+        <li class="modal-item">
+          <lable
+            ><span class="modal-input-title">Name</span
+            ><input
+              type="text"
+              name="user-name"
+              placeholder="Your name"
+              required
+              class="modal-form-input"
+          /></lable>
+        </li>
+        <li class="modal-item">
+          <lable
+            ><span class="modal-input-title">Phone number</span
+            ><input
+              type="tel"
+              name="phone"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              required
+              class="modal-form-input"
+          /></lable>
+        </li>
+        <li class="modal-item">
+          <lable
+            ><span class="modal-input-title">Phone number</span
+            ><input
+              type="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+              class="modal-form-input"
+          /></lable>
+        </li>
+      </ul>
+      <button type="submit" class="modal-button">Send</button>
+    </form>
+    <button type="button" class="modal-close" data-modal-close>
+      <svg class="modal-close-icon">
+        <use href="/vanilla-template/assets/icon-96e649bb.svg#cross"></use>
+      </svg>
+    </button>
+  </div>
+</div>
 
 
     
